@@ -1,11 +1,17 @@
 {
   "name": "homebridge-nikobus",
-  "version": "1.0.7",
-  "description": "Nikobus platform plugin for Homebridge",
+  "displayName": "Nikobus",
+  "version": "2.0.0",
+  "description": "Nikobus platform plugin for Homebridge (maintained fork)",
   "license": "ISC",
   "author": "Tim Schuerewegen",
+  "contributors": [
+    "Lionel Gavage"
+  ],
   "keywords": [
-    "homebridge-plugin"
+    "homebridge-plugin",
+    "nikobus",
+    "niko"
   ],
   "repository": {
     "type": "git",
@@ -15,11 +21,15 @@
     "url": "https://github.com/timschuerewegen/homebridge-nikobus/issues"
   },
   "engines": {
-    "node": ">=4.6.1",
-    "homebridge": ">=0.4.6"
+    "node": "^22.12.0 || ^24.0.0 || ^26.0.0",
+    "homebridge": "^1.8.0 || ^2.0.0"
   },
+  "main": "index.js",
   "dependencies": {
-    "serialport": "9.2.8",
-    "async": "3.2.4"
+    "async": "^3.2.6",
+    "serialport": "^13.0.0"
+  },
+  "allowScripts": {
+    "@serialport/bindings-cpp@13.0.0": true
   }
 }

@@ -1,3 +1,16 @@
+# homebridge-nikobus (maintained fork)
+
+This is a maintained fork of Tim Schuerewegen's original plugin, updated for Homebridge 1.8+/2.x and Node.js 22+.
+
+Upstream last release was 1.0.7 (30 April 2023). Changes in 2.0.0:
+- `engines` declare Homebridge `^1.8.0 || ^2.0.0` and Node `^22.12.0 || ^24 || ^26`
+- `serialport` upgraded to v13 (N-API bindings)
+- SerialPort constructor / `isOpen` API fixes
+- Characteristic handlers use `onGet` / `onSet`
+- Platform always completes accessory registration even if the serial port fails to open
+
+---
+
 # homebridge-nikobus
 
 Nikobus platform plugin for Homebridge (https://github.com/nfarina/homebridge)
