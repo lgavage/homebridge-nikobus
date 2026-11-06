@@ -1,7 +1,7 @@
 {
 	"name": "homebridge-nikobus",
 	"displayName": "Nikobus",
-	"version": "2.0.2",
+	"version": "2.0.3",
 	"description": "Nikobus platform plugin for Homebridge (maintained fork)",
 	"license": "ISC",
 	"author": "Tim Schuerewegen",
